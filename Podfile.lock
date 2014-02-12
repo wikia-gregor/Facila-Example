@@ -2,12 +2,12 @@ PODS:
   - Facila (0.0.1)
 
 DEPENDENCIES:
-  - Facila (from `https://github.com/wikia-gregor/Facila.git`, tag `0.0.1`)
+  - Facila (from `https://github.com/wikia-gregor/Facila.git`, tag `0.0.2`)
 
 EXTERNAL SOURCES:
   Facila:
     :git: https://github.com/wikia-gregor/Facila.git
-    :tag: 0.0.1
+    :tag: 0.0.2
 
 SPEC CHECKSUMS:
   Facila: 003800f1ab2a18ad341bd6bce36d30e57ca093d5
