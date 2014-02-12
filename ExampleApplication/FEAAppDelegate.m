@@ -11,6 +11,7 @@
 #import "Facila.h"
 #import "FEAAboutWikiModule.h"
 #import "FEAOpenWikiSafariModule.h"
+#import "FEAShareModule.h"
 
 @implementation FEAAppDelegate
 
@@ -24,6 +25,7 @@
 
     [self.dispatcher registerModule:[FEAAboutWikiModule new]];
     [self.dispatcher registerModule:[FEAOpenWikiSafariModule new]];
+    [self.dispatcher registerModule:[FEAShareModule new]];
 
     self.window.rootViewController = self.dispatcher.layout;
 

@@ -24,6 +24,7 @@
 		C9858537A6135D0F451AF943 /* FEAAboutWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98586CDE1FCFBEB90749349 /* FEAAboutWikiViewController.m */; };
 		C9858670128E085FC6089795 /* FEAAboutWikiModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858AC96D1035087F062FDD /* FEAAboutWikiModule.m */; };
 		C9858A71DC1F9399C763A2E3 /* FEAWikiListModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C98582F47341DA11D384CCB5 /* FEAWikiListModule.m */; };
+		C9858FB3830CE1B0FB45BEC4 /* FEAShareModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C985858BC53038E074B3310B /* FEAShareModule.m */; };
 		E203DE759C5F44D5A7AC1F08 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4206B8A042B4896A7FEAA2F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		A4206B8A042B4896A7FEAA2F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9123D2BEDF64C6EAE2BC56E /* libPods-ExampleApplication.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExampleApplication.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98582F47341DA11D384CCB5 /* FEAWikiListModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAWikiListModule.m; sourceTree = "<group>"; };
+		C985858BC53038E074B3310B /* FEAShareModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAShareModule.m; sourceTree = SOURCE_ROOT; };
 		C98586CDE1FCFBEB90749349 /* FEAAboutWikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAAboutWikiViewController.m; sourceTree = "<group>"; };
 		C985878DD0DE76C8F101EF75 /* FEAAboutWikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAAboutWikiViewController.h; sourceTree = "<group>"; };
 		C98588EC363BA7A48601662F /* FEAOpenWikiSafariModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAOpenWikiSafariModule.m; sourceTree = SOURCE_ROOT; };
@@ -66,6 +68,7 @@
 		C9858AC96D1035087F062FDD /* FEAAboutWikiModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAAboutWikiModule.m; sourceTree = "<group>"; };
 		C9858B55A5CEE7EBCC15C87B /* FEAWikiListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAWikiListViewController.h; sourceTree = "<group>"; };
 		C9858CB2FDAD3C17E2AD1405 /* FEAAboutWikiModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAAboutWikiModule.h; sourceTree = "<group>"; };
+		C9858D603D49AB9B0F48967F /* FEAShareModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAShareModule.h; sourceTree = SOURCE_ROOT; };
 		C9858F45E6BFA90C0498E06C /* FEAWikiListModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAWikiListModule.h; sourceTree = "<group>"; };
 		C9858FC24874C0900CDD44C8 /* FEAWikiListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAWikiListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +189,8 @@
 		C98586FF5C10A2A1D86C242C /* ShareModule */ = {
 			isa = PBXGroup;
 			children = (
+				C985858BC53038E074B3310B /* FEAShareModule.m */,
+				C9858D603D49AB9B0F48967F /* FEAShareModule.h */,
 			);
 			path = ShareModule;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 				C9858537A6135D0F451AF943 /* FEAAboutWikiViewController.m in Sources */,
 				C9858670128E085FC6089795 /* FEAAboutWikiModule.m in Sources */,
 				C98581D27A983D4F78E8854E /* FEAOpenWikiSafariModule.m in Sources */,
+				C9858FB3830CE1B0FB45BEC4 /* FEAShareModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

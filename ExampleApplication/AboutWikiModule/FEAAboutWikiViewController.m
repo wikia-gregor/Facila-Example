@@ -41,12 +41,19 @@
     [self.view addSubview:self.imageView];
     
     self.textView = [[UITextView alloc] initWithFrame:CGRectZero];
+    self.textView.editable = NO;
     [self.view addSubview:self.textView];
 
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
     [self.imageView addGestureRecognizer:tapGestureRecognizer];
 
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(shareAction:)];
+
     [self loadData];
+}
+
+- (void)shareAction:(id)shareAction {
+    [((FEAAppDelegate *) [UIApplication sharedApplication].delegate).dispatcher callAction:@"share" withParams:self.wikiaDict];
 }
 
 - (void)tapAction:(id)tapAction {

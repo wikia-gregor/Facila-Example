@@ -6,8 +6,6 @@
 
 
 #import <Foundation/Foundation.h>
-#import <Facila.h>
-
 
 @interface FEAOpenWikiSafariModule : FacilaModule
 @end
