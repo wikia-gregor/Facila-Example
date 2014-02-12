@@ -9,4 +9,5 @@
 
 
 @interface FEAAboutWikiViewController : UIViewController
+- (instancetype)initWithWikiId:(NSNumber *)wikiId;
 @end

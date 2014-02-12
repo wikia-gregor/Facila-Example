@@ -36,6 +36,7 @@
 
 - (void)viewDidLoad {
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:self.imageView];
     
     self.textView = [[UITextView alloc] initWithFrame:CGRectZero];
@@ -50,7 +51,7 @@
 
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         NSDictionary *respDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-        NSDictionary *wikiDictionary = respDictionary[self.wikiId];
+        NSDictionary *wikiDictionary = respDictionary[@"items"][self.wikiId.description];
         self.textView.text = wikiDictionary[@"desc"];
         [self loadImage:wikiDictionary[@"image"]];
     }];
@@ -67,8 +68,8 @@
 
 - (void)viewDidLayoutSubviews {
 
-    self.imageView.frame = CGRectMake(0, 0, self.view.bounds.size.width, ceilf((2./3.)*self.view.bounds.size.width));
-    self.textView.frame = CGRectMake(0, ceilf((2./3.)*self.view.bounds.size.width), self.view.bounds.size.width, ceilf((1./3.)*self.view.bounds.size.width));
+    self.imageView.frame = CGRectMake(0, 0, self.view.bounds.size.width, ceilf((2./3.)*self.view.bounds.size.height));
+    self.textView.frame = CGRectMake(0, ceilf((2./3.)*self.view.bounds.size.height), self.view.bounds.size.width, ceilf((1./3.)*self.view.bounds.size.height));
 }
 
 @end

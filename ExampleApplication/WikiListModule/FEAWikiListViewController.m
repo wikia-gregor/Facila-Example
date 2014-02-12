@@ -5,7 +5,9 @@
 //
 
 
+#import <Facila/FacilaDispatcher.h>
 #import "FEAWikiListViewController.h"
+#import "FEAAppDelegate.h"
 
 
 static NSString *const identifier = @"cell";
@@ -67,5 +69,11 @@ static NSString *const identifier = @"cell";
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    [((FEAAppDelegate *) [UIApplication sharedApplication].delegate).dispatcher callAction:@"openAboutWiki" withParams:@{@"id":self.wikis[(NSUInteger) indexPath.row][@"id"]}];
+
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
 
 @end

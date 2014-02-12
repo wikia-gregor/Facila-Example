@@ -6,7 +6,8 @@
 
 
 #import <Foundation/Foundation.h>
+#import "Facila.h"
 
 
-@interface FEAWikiListModule : NSObject
+@interface FEAWikiListModule : FacilaModule
 @end
