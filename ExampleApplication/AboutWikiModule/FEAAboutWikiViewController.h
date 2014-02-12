@@ -9,5 +9,7 @@
 
 
 @interface FEAAboutWikiViewController : UIViewController
+@property(nonatomic, strong) NSDictionary *wikiaDict;
+
 - (instancetype)initWithWikiId:(NSNumber *)wikiId;
 @end

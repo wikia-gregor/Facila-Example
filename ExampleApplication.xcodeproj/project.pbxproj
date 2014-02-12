@@ -19,6 +19,7 @@
 		3BA68512188845D7004E2B45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA684FA188845D7004E2B45 /* UIKit.framework */; };
 		3BA6851A188845D7004E2B45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA68518188845D7004E2B45 /* InfoPlist.strings */; };
 		3BA6851C188845D7004E2B45 /* ExampleApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6851B188845D7004E2B45 /* ExampleApplicationTests.m */; };
+		C98581D27A983D4F78E8854E /* FEAOpenWikiSafariModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C98588EC363BA7A48601662F /* FEAOpenWikiSafariModule.m */; };
 		C98582D423107AAC36D3F46F /* FEAWikiListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858FC24874C0900CDD44C8 /* FEAWikiListViewController.m */; };
 		C9858537A6135D0F451AF943 /* FEAAboutWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98586CDE1FCFBEB90749349 /* FEAAboutWikiViewController.m */; };
 		C9858670128E085FC6089795 /* FEAAboutWikiModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858AC96D1035087F062FDD /* FEAAboutWikiModule.m */; };
@@ -60,6 +61,8 @@
 		C98582F47341DA11D384CCB5 /* FEAWikiListModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAWikiListModule.m; sourceTree = "<group>"; };
 		C98586CDE1FCFBEB90749349 /* FEAAboutWikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAAboutWikiViewController.m; sourceTree = "<group>"; };
 		C985878DD0DE76C8F101EF75 /* FEAAboutWikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAAboutWikiViewController.h; sourceTree = "<group>"; };
+		C98588EC363BA7A48601662F /* FEAOpenWikiSafariModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAOpenWikiSafariModule.m; sourceTree = SOURCE_ROOT; };
+		C98589425CA513952D380C1C /* FEAOpenWikiSafariModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAOpenWikiSafariModule.h; sourceTree = SOURCE_ROOT; };
 		C9858AC96D1035087F062FDD /* FEAAboutWikiModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAAboutWikiModule.m; sourceTree = "<group>"; };
 		C9858B55A5CEE7EBCC15C87B /* FEAWikiListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAWikiListViewController.h; sourceTree = "<group>"; };
 		C9858CB2FDAD3C17E2AD1405 /* FEAAboutWikiModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAAboutWikiModule.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 		C985849092805E3AAFD82370 /* OpenWikiSafariModule */ = {
 			isa = PBXGroup;
 			children = (
+				C98588EC363BA7A48601662F /* FEAOpenWikiSafariModule.m */,
+				C98589425CA513952D380C1C /* FEAOpenWikiSafariModule.h */,
 			);
 			path = OpenWikiSafariModule;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 				C98582D423107AAC36D3F46F /* FEAWikiListViewController.m in Sources */,
 				C9858537A6135D0F451AF943 /* FEAAboutWikiViewController.m in Sources */,
 				C9858670128E085FC6089795 /* FEAAboutWikiModule.m in Sources */,
+				C98581D27A983D4F78E8854E /* FEAOpenWikiSafariModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

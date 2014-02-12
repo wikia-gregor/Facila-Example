@@ -20,9 +20,11 @@ NSString *const openAboutWikiURL = @"openAboutWiki";
     [registrationDispatcher registerAction:openAboutWikiURL
                                  withBlock:^(NSDictionary *params, FacilaDispatcher *dispatcher) {
 
-        [dispatcher.layout pushViewController:[[FEAAboutWikiViewController alloc] initWithWikiId:params[@"id"]] animated:YES];
+                                     FEAAboutWikiViewController *controller = [[FEAAboutWikiViewController alloc] initWithWikiId:params[@"id"]];
+                                     controller.wikiaDict = params;
+                                     [dispatcher.layout pushViewController:controller animated:YES];
 
-    }];
+                                 }];
 }
 
 - (void)handleAction:(NSString *)actionName params:(NSDictionary *)params {

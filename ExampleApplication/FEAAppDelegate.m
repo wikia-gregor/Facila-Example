@@ -10,6 +10,7 @@
 #import "FEAWikiListViewController.h"
 #import "Facila.h"
 #import "FEAAboutWikiModule.h"
+#import "FEAOpenWikiSafariModule.h"
 
 @implementation FEAAppDelegate
 
@@ -22,6 +23,7 @@
     self.dispatcher.layout = [[UINavigationController alloc] initWithRootViewController:[FEAWikiListViewController new]];
 
     [self.dispatcher registerModule:[FEAAboutWikiModule new]];
+    [self.dispatcher registerModule:[FEAOpenWikiSafariModule new]];
 
     self.window.rootViewController = self.dispatcher.layout;
 

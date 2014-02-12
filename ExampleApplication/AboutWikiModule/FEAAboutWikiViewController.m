@@ -6,7 +6,7 @@
 
 
 #import "FEAAboutWikiViewController.h"
-
+#import "FEAAppDelegate.h"
 
 @interface FEAAboutWikiViewController ()
 @property(nonatomic, strong) NSNumber *wikiId;
@@ -37,28 +37,26 @@
 - (void)viewDidLoad {
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+    self.imageView.userInteractionEnabled = YES;
     [self.view addSubview:self.imageView];
     
     self.textView = [[UITextView alloc] initWithFrame:CGRectZero];
     [self.view addSubview:self.textView];
 
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+    [self.imageView addGestureRecognizer:tapGestureRecognizer];
+
     [self loadData];
 }
 
-- (void)loadData {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.wikia.com/api/v1/Wikis/Details?ids=%@", self.wikiId]];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-        NSDictionary *respDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-        NSDictionary *wikiDictionary = respDictionary[@"items"][self.wikiId.description];
-        self.textView.text = wikiDictionary[@"desc"];
-        [self loadImage:wikiDictionary[@"image"]];
-    }];
+- (void)tapAction:(id)tapAction {
+    [((FEAAppDelegate *) [UIApplication sharedApplication].delegate).dispatcher callAction:@"openWiki" withParams:@{@"url":self.wikiaDict[@"domain"]}];
 }
 
-- (void)loadImage:(NSString *)imageUrl {
-    NSURL *url = [NSURL URLWithString:imageUrl];
+- (void)loadData {
+    self.textView.text = self.wikiaDict[@"desc"];
+
+    NSURL *url = [NSURL URLWithString:self.wikiaDict[@"image"]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
