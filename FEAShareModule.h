@@ -1,5 +1,5 @@
 //
-// Created by Aleksander Balicki on 10/02/14.
+// Created by Aleksander Balicki on 12/02/14.
 // Copyright (c) 2014 Wikia. All rights reserved.
 //
 //
@@ -7,5 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FEAWikiListModule : FacilaModule
+
+@interface FEAShareModule : FacilaModule
 @end
