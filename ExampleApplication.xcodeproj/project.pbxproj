@@ -12,21 +12,22 @@
 		3BA684FB188845D7004E2B45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA684FA188845D7004E2B45 /* UIKit.framework */; };
 		3BA68501188845D7004E2B45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA684FF188845D7004E2B45 /* InfoPlist.strings */; };
 		3BA68503188845D7004E2B45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA68502188845D7004E2B45 /* main.m */; };
-		3BA68507188845D7004E2B45 /* FEAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA68506188845D7004E2B45 /* FEAAppDelegate.m */; };
 		3BA68509188845D7004E2B45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA68508188845D7004E2B45 /* Images.xcassets */; };
 		3BA68510188845D7004E2B45 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA6850F188845D7004E2B45 /* XCTest.framework */; };
 		3BA68511188845D7004E2B45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA684F6188845D7004E2B45 /* Foundation.framework */; };
 		3BA68512188845D7004E2B45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA684FA188845D7004E2B45 /* UIKit.framework */; };
 		3BA6851A188845D7004E2B45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA68518188845D7004E2B45 /* InfoPlist.strings */; };
 		3BA6851C188845D7004E2B45 /* ExampleApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6851B188845D7004E2B45 /* ExampleApplicationTests.m */; };
-		C98581D27A983D4F78E8854E /* FEAOpenWikiSafariModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C98588EC363BA7A48601662F /* FEAOpenWikiSafariModule.m */; };
+		6BE461BBDAE86BA327A4083E /* FEAOpenWikiWebviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE46AE14347E7246D8ADDE4 /* FEAOpenWikiWebviewViewController.m */; };
+		6BE462487E84AA91D03BC0C9 /* FEAAboutWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE46E8B91483870A4AEFAA3 /* FEAAboutWikiViewController.m */; };
+		6BE464D2C48B22826E1AC0F7 /* FEAOpenWikiSafariModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE46758C27D635E6CFE791F /* FEAOpenWikiSafariModule.m */; };
+		6BE46727C007064F98FC8C9D /* FEAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4655A725330EBE9D4403E /* FEAAppDelegate.m */; };
+		6BE46A178F3C3A5CD79C21B0 /* UINavigationController+FacilaLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE46F9B9B871A309E67239A /* UINavigationController+FacilaLayout.m */; };
+		6BE46A754BC93A3B04B44243 /* FEAOpenWikiWebviewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE46038CAF82E9D68CF2C52 /* FEAOpenWikiWebviewModule.m */; };
+		6BE46C68808E1E36D0A2D96B /* FEAAboutWikiModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE463629E65007F93A7C968 /* FEAAboutWikiModule.m */; };
+		6BE46D3FE561E2CF0F518EF8 /* FEAShareModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE46973B7E7B65C73E48538 /* FEAShareModule.m */; };
 		C98582D423107AAC36D3F46F /* FEAWikiListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858FC24874C0900CDD44C8 /* FEAWikiListViewController.m */; };
-		C9858537A6135D0F451AF943 /* FEAAboutWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98586CDE1FCFBEB90749349 /* FEAAboutWikiViewController.m */; };
-		C9858670128E085FC6089795 /* FEAAboutWikiModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858AC96D1035087F062FDD /* FEAAboutWikiModule.m */; };
 		C9858A71DC1F9399C763A2E3 /* FEAWikiListModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C98582F47341DA11D384CCB5 /* FEAWikiListModule.m */; };
-		C9858AC18171C1425A836B67 /* FEAOpenWikiWebviewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C98582014B8F786E043739E5 /* FEAOpenWikiWebviewModule.m */; };
-		C9858E2D6F67DDCC1C124421 /* FEAOpenWikiWebviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9858B3C15FBF75EAD821FD2 /* FEAOpenWikiWebviewViewController.m */; };
-		C9858FB3830CE1B0FB45BEC4 /* FEAShareModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C985858BC53038E074B3310B /* FEAShareModule.m */; };
 		E203DE759C5F44D5A7AC1F08 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4206B8A042B4896A7FEAA2F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +51,6 @@
 		3BA68500188845D7004E2B45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BA68502188845D7004E2B45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BA68504188845D7004E2B45 /* ExampleApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExampleApplication-Prefix.pch"; sourceTree = "<group>"; };
-		3BA68505188845D7004E2B45 /* FEAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FEAAppDelegate.h; sourceTree = "<group>"; };
-		3BA68506188845D7004E2B45 /* FEAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FEAAppDelegate.m; sourceTree = "<group>"; };
 		3BA68508188845D7004E2B45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3BA6850E188845D7004E2B45 /* ExampleApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA6850F188845D7004E2B45 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,24 +58,28 @@
 		3BA68519188845D7004E2B45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BA6851B188845D7004E2B45 /* ExampleApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleApplicationTests.m; sourceTree = "<group>"; };
 		4BF34DD3CAA94395B63ED631 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6BE46038CAF82E9D68CF2C52 /* FEAOpenWikiWebviewModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAOpenWikiWebviewModule.m; sourceTree = "<group>"; };
+		6BE46043A45406A90D7413F8 /* UINavigationController+FacilaLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FacilaLayout.h"; sourceTree = "<group>"; };
+		6BE463629E65007F93A7C968 /* FEAAboutWikiModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAAboutWikiModule.m; sourceTree = "<group>"; };
+		6BE46438DACCAD3E202DF911 /* FEAOpenWikiSafariModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAOpenWikiSafariModule.h; sourceTree = "<group>"; };
+		6BE465064E3652C716D7D465 /* FEAAboutWikiModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAAboutWikiModule.h; sourceTree = "<group>"; };
+		6BE4655A725330EBE9D4403E /* FEAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAAppDelegate.m; sourceTree = "<group>"; };
+		6BE466F67C1A778C45272772 /* FEAOpenWikiWebviewModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAOpenWikiWebviewModule.h; sourceTree = "<group>"; };
+		6BE46758C27D635E6CFE791F /* FEAOpenWikiSafariModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAOpenWikiSafariModule.m; sourceTree = "<group>"; };
+		6BE46973B7E7B65C73E48538 /* FEAShareModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAShareModule.m; sourceTree = "<group>"; };
+		6BE46AE14347E7246D8ADDE4 /* FEAOpenWikiWebviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAOpenWikiWebviewViewController.m; sourceTree = "<group>"; };
+		6BE46AFB2D379391EEA36E98 /* FEAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAAppDelegate.h; sourceTree = "<group>"; };
+		6BE46B93065889351D83C0D4 /* FEAOpenWikiWebviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAOpenWikiWebviewViewController.h; sourceTree = "<group>"; };
+		6BE46C15CBF5C8DEC7F7456C /* FEAShareModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAShareModule.h; sourceTree = "<group>"; };
+		6BE46CA0C44863C4C268FDE9 /* FEAAboutWikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAAboutWikiViewController.h; sourceTree = "<group>"; };
+		6BE46E8B91483870A4AEFAA3 /* FEAAboutWikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAAboutWikiViewController.m; sourceTree = "<group>"; };
+		6BE46F9B9B871A309E67239A /* UINavigationController+FacilaLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FacilaLayout.m"; sourceTree = "<group>"; };
 		A4206B8A042B4896A7FEAA2F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9123D2BEDF64C6EAE2BC56E /* libPods-ExampleApplication.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExampleApplication.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C98582014B8F786E043739E5 /* FEAOpenWikiWebviewModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAOpenWikiWebviewModule.m; sourceTree = SOURCE_ROOT; };
-		C98582366F58E20AD1C53115 /* FEAOpenWikiWebviewModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAOpenWikiWebviewModule.h; sourceTree = SOURCE_ROOT; };
 		C98582F47341DA11D384CCB5 /* FEAWikiListModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAWikiListModule.m; sourceTree = "<group>"; };
-		C985858BC53038E074B3310B /* FEAShareModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAShareModule.m; sourceTree = SOURCE_ROOT; };
-		C98586CDE1FCFBEB90749349 /* FEAAboutWikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAAboutWikiViewController.m; sourceTree = "<group>"; };
-		C985878DD0DE76C8F101EF75 /* FEAAboutWikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAAboutWikiViewController.h; sourceTree = "<group>"; };
-		C98588EC363BA7A48601662F /* FEAOpenWikiSafariModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAOpenWikiSafariModule.m; sourceTree = SOURCE_ROOT; };
-		C98589425CA513952D380C1C /* FEAOpenWikiSafariModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAOpenWikiSafariModule.h; sourceTree = SOURCE_ROOT; };
-		C9858AC96D1035087F062FDD /* FEAAboutWikiModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAAboutWikiModule.m; sourceTree = "<group>"; };
-		C9858B3C15FBF75EAD821FD2 /* FEAOpenWikiWebviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAOpenWikiWebviewViewController.m; sourceTree = SOURCE_ROOT; };
 		C9858B55A5CEE7EBCC15C87B /* FEAWikiListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAWikiListViewController.h; sourceTree = "<group>"; };
-		C9858CB2FDAD3C17E2AD1405 /* FEAAboutWikiModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAAboutWikiModule.h; sourceTree = "<group>"; };
-		C9858D603D49AB9B0F48967F /* FEAShareModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAShareModule.h; sourceTree = SOURCE_ROOT; };
 		C9858F45E6BFA90C0498E06C /* FEAWikiListModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAWikiListModule.h; sourceTree = "<group>"; };
 		C9858FC24874C0900CDD44C8 /* FEAWikiListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAWikiListViewController.m; sourceTree = "<group>"; };
-		C9858FF7AEB9F58B3B455129 /* FEAOpenWikiWebviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAOpenWikiWebviewViewController.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,15 +144,14 @@
 		3BA684FC188845D7004E2B45 /* ExampleApplication */ = {
 			isa = PBXGroup;
 			children = (
-				3BA68505188845D7004E2B45 /* FEAAppDelegate.h */,
-				3BA68506188845D7004E2B45 /* FEAAppDelegate.m */,
 				3BA68508188845D7004E2B45 /* Images.xcassets */,
 				3BA684FD188845D7004E2B45 /* Supporting Files */,
 				C9858EFFB2671504F032493E /* WikiListModule */,
-				C9858B3AA1192E24D876D3EC /* AboutWikiModule */,
-				C985849092805E3AAFD82370 /* OpenWikiSafariModule */,
-				C9858A13AE76B35C216749CB /* OpenWikiWebviewModule */,
-				C98586FF5C10A2A1D86C242C /* ShareModule */,
+				6BE46F9B9B871A309E67239A /* UINavigationController+FacilaLayout.m */,
+				6BE46043A45406A90D7413F8 /* UINavigationController+FacilaLayout.h */,
+				6BE4655A725330EBE9D4403E /* FEAAppDelegate.m */,
+				6BE46AFB2D379391EEA36E98 /* FEAAppDelegate.h */,
+				6BE46404CD8EE19A52C1F7B0 /* Modules */,
 			);
 			path = ExampleApplication;
 			sourceTree = "<group>";
@@ -183,44 +185,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C985849092805E3AAFD82370 /* OpenWikiSafariModule */ = {
+		6BE460385B510658E73B2637 /* AboutWikiModule */ = {
 			isa = PBXGroup;
 			children = (
-				C98588EC363BA7A48601662F /* FEAOpenWikiSafariModule.m */,
-				C98589425CA513952D380C1C /* FEAOpenWikiSafariModule.h */,
+				6BE46E8B91483870A4AEFAA3 /* FEAAboutWikiViewController.m */,
+				6BE46CA0C44863C4C268FDE9 /* FEAAboutWikiViewController.h */,
+				6BE463629E65007F93A7C968 /* FEAAboutWikiModule.m */,
+				6BE465064E3652C716D7D465 /* FEAAboutWikiModule.h */,
+			);
+			path = AboutWikiModule;
+			sourceTree = "<group>";
+		};
+		6BE461E0DDBF6B7074C1FED1 /* OpenWikiSafariModule */ = {
+			isa = PBXGroup;
+			children = (
+				6BE46758C27D635E6CFE791F /* FEAOpenWikiSafariModule.m */,
+				6BE46438DACCAD3E202DF911 /* FEAOpenWikiSafariModule.h */,
 			);
 			path = OpenWikiSafariModule;
 			sourceTree = "<group>";
 		};
-		C98586FF5C10A2A1D86C242C /* ShareModule */ = {
+		6BE46260564CDAD6580279FE /* ShareModule */ = {
 			isa = PBXGroup;
 			children = (
-				C985858BC53038E074B3310B /* FEAShareModule.m */,
-				C9858D603D49AB9B0F48967F /* FEAShareModule.h */,
+				6BE46973B7E7B65C73E48538 /* FEAShareModule.m */,
+				6BE46C15CBF5C8DEC7F7456C /* FEAShareModule.h */,
 			);
 			path = ShareModule;
 			sourceTree = "<group>";
 		};
-		C9858A13AE76B35C216749CB /* OpenWikiWebviewModule */ = {
+		6BE462ADD615CC6CD9603530 /* OpenWikiWebViewModule */ = {
 			isa = PBXGroup;
 			children = (
-				C98582014B8F786E043739E5 /* FEAOpenWikiWebviewModule.m */,
-				C98582366F58E20AD1C53115 /* FEAOpenWikiWebviewModule.h */,
-				C9858B3C15FBF75EAD821FD2 /* FEAOpenWikiWebviewViewController.m */,
-				C9858FF7AEB9F58B3B455129 /* FEAOpenWikiWebviewViewController.h */,
+				6BE466F67C1A778C45272772 /* FEAOpenWikiWebviewModule.h */,
+				6BE46AE14347E7246D8ADDE4 /* FEAOpenWikiWebviewViewController.m */,
+				6BE46038CAF82E9D68CF2C52 /* FEAOpenWikiWebviewModule.m */,
+				6BE46B93065889351D83C0D4 /* FEAOpenWikiWebviewViewController.h */,
 			);
-			path = OpenWikiWebviewModule;
+			path = OpenWikiWebViewModule;
 			sourceTree = "<group>";
 		};
-		C9858B3AA1192E24D876D3EC /* AboutWikiModule */ = {
+		6BE46404CD8EE19A52C1F7B0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C98586CDE1FCFBEB90749349 /* FEAAboutWikiViewController.m */,
-				C985878DD0DE76C8F101EF75 /* FEAAboutWikiViewController.h */,
-				C9858AC96D1035087F062FDD /* FEAAboutWikiModule.m */,
-				C9858CB2FDAD3C17E2AD1405 /* FEAAboutWikiModule.h */,
+				6BE460385B510658E73B2637 /* AboutWikiModule */,
+				6BE461E0DDBF6B7074C1FED1 /* OpenWikiSafariModule */,
+				6BE462ADD615CC6CD9603530 /* OpenWikiWebViewModule */,
+				6BE46260564CDAD6580279FE /* ShareModule */,
 			);
-			path = AboutWikiModule;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		C9858EFFB2671504F032493E /* WikiListModule */ = {
@@ -366,15 +379,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BA68503188845D7004E2B45 /* main.m in Sources */,
-				3BA68507188845D7004E2B45 /* FEAAppDelegate.m in Sources */,
 				C9858A71DC1F9399C763A2E3 /* FEAWikiListModule.m in Sources */,
 				C98582D423107AAC36D3F46F /* FEAWikiListViewController.m in Sources */,
-				C9858537A6135D0F451AF943 /* FEAAboutWikiViewController.m in Sources */,
-				C9858670128E085FC6089795 /* FEAAboutWikiModule.m in Sources */,
-				C98581D27A983D4F78E8854E /* FEAOpenWikiSafariModule.m in Sources */,
-				C9858FB3830CE1B0FB45BEC4 /* FEAShareModule.m in Sources */,
-				C9858AC18171C1425A836B67 /* FEAOpenWikiWebviewModule.m in Sources */,
-				C9858E2D6F67DDCC1C124421 /* FEAOpenWikiWebviewViewController.m in Sources */,
+				6BE46A178F3C3A5CD79C21B0 /* UINavigationController+FacilaLayout.m in Sources */,
+				6BE46727C007064F98FC8C9D /* FEAAppDelegate.m in Sources */,
+				6BE462487E84AA91D03BC0C9 /* FEAAboutWikiViewController.m in Sources */,
+				6BE46C68808E1E36D0A2D96B /* FEAAboutWikiModule.m in Sources */,
+				6BE464D2C48B22826E1AC0F7 /* FEAOpenWikiSafariModule.m in Sources */,
+				6BE461BBDAE86BA327A4083E /* FEAOpenWikiWebviewViewController.m in Sources */,
+				6BE46A754BC93A3B04B44243 /* FEAOpenWikiWebviewModule.m in Sources */,
+				6BE46D3FE561E2CF0F518EF8 /* FEAShareModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
