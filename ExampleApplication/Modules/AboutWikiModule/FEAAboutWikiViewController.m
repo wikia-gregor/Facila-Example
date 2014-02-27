@@ -6,7 +6,7 @@
 
 
 #import "FEAAboutWikiViewController.h"
-
+#import "FEAAppDelegate.h"
 
 @interface FEAAboutWikiViewController ()
 @property(nonatomic, strong) NSNumber *wikiId;
@@ -36,28 +36,34 @@
 
 - (void)viewDidLoad {
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+    self.imageView.userInteractionEnabled = YES;
     [self.view addSubview:self.imageView];
     
     self.textView = [[UITextView alloc] initWithFrame:CGRectZero];
+    self.textView.editable = NO;
     [self.view addSubview:self.textView];
+
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+    [self.imageView addGestureRecognizer:tapGestureRecognizer];
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(shareAction:)];
 
     [self loadData];
 }
 
-- (void)loadData {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.wikia.com/api/v1/Wikis/Details?ids=%@", self.wikiId]];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-        NSDictionary *respDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-        NSDictionary *wikiDictionary = respDictionary[self.wikiId];
-        self.textView.text = wikiDictionary[@"desc"];
-        [self loadImage:wikiDictionary[@"image"]];
-    }];
+- (void)shareAction:(id)shareAction {
+    [((FEAAppDelegate *) [UIApplication sharedApplication].delegate).dispatcher callAction:@"share" withParams:self.wikiaDict];
 }
 
-- (void)loadImage:(NSString *)imageUrl {
-    NSURL *url = [NSURL URLWithString:imageUrl];
+- (void)tapAction:(id)tapAction {
+    [((FEAAppDelegate *) [UIApplication sharedApplication].delegate).dispatcher callAction:@"openWiki" withParams:@{@"url":self.wikiaDict[@"domain"]}];
+}
+
+- (void)loadData {
+    self.textView.text = self.wikiaDict[@"desc"];
+
+    NSURL *url = [NSURL URLWithString:self.wikiaDict[@"image"]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
@@ -67,8 +73,8 @@
 
 - (void)viewDidLayoutSubviews {
 
-    self.imageView.frame = CGRectMake(0, 0, self.view.bounds.size.width, ceilf((2./3.)*self.view.bounds.size.width));
-    self.textView.frame = CGRectMake(0, ceilf((2./3.)*self.view.bounds.size.width), self.view.bounds.size.width, ceilf((1./3.)*self.view.bounds.size.width));
+    self.imageView.frame = CGRectMake(0, 0, self.view.bounds.size.width, ceilf((2./3.)*self.view.bounds.size.height));
+    self.textView.frame = CGRectMake(0, ceilf((2./3.)*self.view.bounds.size.height), self.view.bounds.size.width, ceilf((1./3.)*self.view.bounds.size.height));
 }
 
 @end

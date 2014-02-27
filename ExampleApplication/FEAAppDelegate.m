@@ -8,19 +8,28 @@
 
 #import "FEAAppDelegate.h"
 #import "FEAWikiListViewController.h"
-#import "Facila.h"
+#import "FEAAboutWikiModule.h"
+#import "FEAOpenWikiSafariModule.h"
+#import "FEAShareModule.h"
+#import "FEAOpenWikiWebviewModule.h"
+#import "UINavigationController+FacilaLayout.h"
 
 @implementation FEAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.dispatcher = [[FacilaDispatcher alloc] init];
-
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
 
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[FEAWikiListViewController new]];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[FEAWikiListViewController new]];
+    self.dispatcher = [[FacilaDispatcher alloc] initWithLayout:navigationController];
+
+    [self.dispatcher registerModule:[FEAAboutWikiModule new]];
+//    [self.dispatcher registerModule:[FEAOpenWikiSafariModule new]];
+    [self.dispatcher registerModule:[FEAOpenWikiWebviewModule new]];
+    [self.dispatcher registerModule:[FEAShareModule new]];
+
+    self.window.rootViewController = navigationController;
 
     [self.window makeKeyAndVisible];
     return YES;

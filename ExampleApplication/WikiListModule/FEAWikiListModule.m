@@ -11,4 +11,14 @@
 @implementation FEAWikiListModule {
 
 }
+
+- (void)registerActions:(FacilaDispatcher *)dispatcher {
+
+}
+
+- (void)handleAction:(NSString *)actionName params:(NSDictionary *)params {
+
+}
+
+
 @end

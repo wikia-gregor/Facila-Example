@@ -6,6 +6,7 @@
 
 
 #import "FEAWikiListViewController.h"
+#import "FEAAppDelegate.h"
 
 
 static NSString *const identifier = @"cell";
@@ -44,7 +45,7 @@ static NSString *const identifier = @"cell";
 
 - (void)loadData {
 
-    NSURL *url = [[NSURL alloc] initWithString:@"http://www.wikia.com/api/v1/Wikis/List?hub=Gaming&lang=en&limit=25&batch=1"];
+    NSURL *url = [[NSURL alloc] initWithString:@"http://www.wikia.com/api/v1/Wikis/List?expand=1&hub=Gaming&lang=en&limit=25&batch=1"];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     
     [NSURLConnection sendAsynchronousRequest:urlRequest queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
@@ -67,5 +68,11 @@ static NSString *const identifier = @"cell";
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    [((FEAAppDelegate *) [UIApplication sharedApplication].delegate).dispatcher callAction:@"openAboutWiki" withParams:self.wikis[(NSUInteger) indexPath.row]];
+
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
 
 @end
