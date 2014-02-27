@@ -12,6 +12,7 @@
 #import "FEAOpenWikiSafariModule.h"
 #import "FEAShareModule.h"
 #import "FEAOpenWikiWebviewModule.h"
+#import "UINavigationController+FacilaLayout.h"
 
 @implementation FEAAppDelegate
 
@@ -20,15 +21,15 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
 
-    self.dispatcher = [[FacilaDispatcher alloc] init];
-    self.dispatcher.layout = [[UINavigationController alloc] initWithRootViewController:[FEAWikiListViewController new]];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[FEAWikiListViewController new]];
+    self.dispatcher = [[FacilaDispatcher alloc] initWithLayout:navigationController];
 
     [self.dispatcher registerModule:[FEAAboutWikiModule new]];
 //    [self.dispatcher registerModule:[FEAOpenWikiSafariModule new]];
     [self.dispatcher registerModule:[FEAOpenWikiWebviewModule new]];
     [self.dispatcher registerModule:[FEAShareModule new]];
 
-    self.window.rootViewController = self.dispatcher.layout;
+    self.window.rootViewController = navigationController;
 
     [self.window makeKeyAndVisible];
     return YES;
