@@ -1,4 +1,4 @@
 platform :ios, '6.0'
 workspace 'ExampleApplication'
 
-pod 'Facila', :git => 'https://github.com/wikia-gregor/Facila.git', :branch => 'feature/initialization_with_layout'
+pod 'Facila', :git => 'https://github.com/wikia-gregor/Facila.git'
